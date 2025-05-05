@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Magic Interactives Playground</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -22,7 +22,7 @@
 
   <!-- Interactive Image Gallery -->
   <div class="gallery">
-    <img src="https://placekitten.com/200/200" id="galleryImg" alt="Gallery Image">
+    <img src="images/will-shirley-xRKcHoCOA4Y-unsplash.jpg" id="galleryImg" alt="Gallery Image">
     <br>
     <button onclick="prevImage()">Prev</button>
     <button onclick="nextImage()">Next</button>
@@ -31,4 +31,20 @@
   <!-- Accordion -->
   <div class="accordion">
     <button class="accordion-toggle">Show Info</button>
-    <div
+    <div class="accordion-content">This is hidden content!</div>
+  </div>
+
+  <!-- Form with Validation -->
+  <h2>Sign Up</h2>
+  <form id="signupForm">
+    <input type="text" id="username" placeholder="Username" required><br>
+    <input type="email" id="email" placeholder="Email" required><br>
+    <input type="password" id="password" placeholder="Password" required><br>
+    <span id="passwordHint"></span><br>
+    <button type="submit">Submit</button>
+  </form>
+  <p id="formMsg"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
