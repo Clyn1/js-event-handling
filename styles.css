@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #0097a7;
+    transform: scale(1.05);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .gallery img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .accordion-content {
+    display: none;
+    background-color: #e0f7fa;
+    padding: 10px;
+    margin-top: 5px;
+  }
+  
+  input {
+    margin: 5px;
+    padding: 8px;
+    width: 200px;
+  }
+  
+  #passwordHint {
+    color: red;
+    font-size: 0.9em;
+  }
+  

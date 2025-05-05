@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Magic Interactives Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🎉 Welcome to the Magic Playground!</h1>
+
+  <!-- Event Handling -->
+  <button id="magicBtn">Click Me!</button>
+  <p id="hoverText">Hover over me!</p>
+
+  <!-- Keypress Detection -->
+  <p>Press any key: <span id="keyOutput">Waiting...</span></p>
+
+  <!-- Double-click Secret -->
+  <button id="secretBtn">Double-click Me!</button>
+  <p id="secretMessage" class="hidden">🎉 Secret Unlocked!</p>
+
+  <!-- Interactive Image Gallery -->
+  <div class="gallery">
+    <img src="https://placekitten.com/200/200" id="galleryImg" alt="Gallery Image">
+    <br>
+    <button onclick="prevImage()">Prev</button>
+    <button onclick="nextImage()">Next</button>
+  </div>
+
+  <!-- Accordion -->
+  <div class="accordion">
+    <button class="accordion-toggle">Show Info</button>
+    <div
