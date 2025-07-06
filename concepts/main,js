@@ -1,0 +1,45 @@
+// 🔹 1. Closure Example
+function greetingMaker(name) {
+  const greetText = "Hello";
+  return function() {
+    return `${greetText}, ${name}! 👋`;
+  };
+}
+
+const greet = greetingMaker("Clyn");
+console.log("Greeting using closure:", greet()); // Output: Hello, Clyn! 👋
+
+
+// 🔹 2. Simulated API Call (Promise)
+function fakeWeatherAPI() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve({
+        location: "Nairobi",
+        temperature: 26,
+        condition: "Sunny"
+      });
+    }, 2000); // 2 second delay to simulate API
+  });
+}
+
+
+// 🔹 3. Async/Await + Destructuring + Spread + Arrow Function
+const getWeather = async () => {
+  console.log("Fetching weather...");
+
+  const data = await fakeWeatherAPI(); // Wait for the promise
+
+  const { location, temperature, condition } = data; // Destructuring
+  const weatherData = { ...data, unit: "°C" }; // Spread Operator
+
+  console.log(`📍 ${location} | 🌡️ ${temperature}${weatherData.unit} | ☀️ ${condition}`);
+};
+
+// Call it
+getWeather();
+
+
+// 🔹 4. ES6 Arrow Function (Extra example)
+const add = (a, b) => a + b;
+console.log("Arrow function add(2, 3):", add(2, 3)); // 5
